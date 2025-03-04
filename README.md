@@ -33,3 +33,7 @@ The script `NW_Algorithm.py` contains the implementation of the Needleman-Wunsch
 ## Statistics
 
 The directories `Data_Analysis_LMM_Code/`, `Data_Analysis_Complexity_LMM_Code/`, `Data_Analysis_Complexity_2stages_LMM_Code/`, `Data_Analysis_Complexity_3stages_LMM_Code/` contain statistical analysis scripts written in R. Each directory corresponds to a different research question, so please select the appropriate directory that aligns with your investigation. The `Data_Analysis_LMM_Code/` directory serves as the base version. Each R file under these directories contains a single regression model for one linearity measure, includng Element Coverage, Execution Order Dynamic Score, Execuion Order Dynamic Repetitions, Execution Order Naive Score, Horizontal Later Rate, Line Regression Rate, Regression Rate, Saccade Length, Story Order Dynamic Score, Story Order Dynamic Repetitions, Story Order Naive Score, Vertical Later Rate and Vertical Next Rate. The outputs are saved in `Analysis_Results_Expertise_Programming_Language/`, `Analysis_Results_Expertise_Programming_Language_Complexity/`, `Analysis_Results_Expertise_Programming_Language_Complexity_2stages/`, `Analysis_Results_Expertise_Programming_Language_Complexity_3stages/` respectively. 
+
+## Preliminary Summary
+
+Please find a preliminary summary in `Temporary Summary of Data Analysis Results.txt`
