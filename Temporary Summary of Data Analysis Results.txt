@@ -1,0 +1,154 @@
+
+
+Note that significance here specifically refers to whether the observed differences are statistically significant, rather than whether the absolute magnitude of the difference is relatively large.
+
+
+1. Programmer's Expertise: Comparing to programmers with high expertise: 
+
+none, low, medium expertise: all no significant difference in Vertical Next rate 
+none, low, medium expertise: all no significant difference in Vertical Later rate 
+
+none, low expertise: no significant difference in Horizontal Later rate
+medium experise: significantly higher Horizontal Later (approx. +2.56%)
+
+none, low, medium expertise: all no significant difference in Regression rate
+none, low, medium expertise: all no significant difference in Line Regression rate
+none, low, medium expertise: all no significant difference in Saccade Length 
+
+low expertise: no significant difference in Element Coverage 
+none expertise: significantly lower Element overage (approx. -3.28%)
+medium expertise: significantly higher Element Coverage( approx. + 1.69%) 
+
+
+low, none expertise: no significant difference in Story Order Naive Score
+medium expertise: significantly lower Story Order Naive Score (approx. -21.97)
+
+none, low, medium experise: no significant difference in Story Order Dynamic Score 
+none, low, medium expertise: no significant difference in Story Order Dynamic Repetitions 
+
+low, none expertise: no significcant difference in Execution Order Naive Score
+medium experttise: significantly lower Execution Order Naive Score (approx. -19.78)
+
+none, low, medium expertise: no significant difference in Execution Order Dynamic Score
+
+low expertise: no significant difference in Story Order Dynamic Repetitions 
+medium expertise: significantly higher Story Order Dynamic Repetitions (approx. +0.36)
+none expertise: significantly lower Story Order Dynamic Repetitions (approx. -0.56) 
+
+
+Although we observe differences in several metrics across different levels of expertise, most of these differences are not statistically significant. Consequently, and somewhat unexpectedly, we do not find a clear pattern indicating how varying levels of programming expertise influence reading behaviors.
+
+
+
+2. Programming language: When reading python code comparing to reading java code: 
+
+
+significantly lower Vertical Next rate (approx. -6.4%),
+not fully significantly lower Vertical Later rate (approx. -3.3%)
+not fully significantly lower Horizontal Later rate (approx. -5.6%)
+no significant difference in Regression rate
+no significant difference in Line Regression rate
+significantly higher Saccade Length (approx. + 18.5) 
+no signifiant difference in Element Coverage 
+not fully siginicantly higher Story Order Naive Score (approx. + 56.13) 
+significantly higher Story Order Dynamic Socre (approx. + 51.3) 
+not fully significantly difference in Story Order Dynamic Repetitions 
+significantly higher Execution Order Naive Socre (approx. + 54.7) 
+very significantly higher Execution Order Dynamic Score (approx. + 54.27) 
+no significant difference in Execution Order Dynamic Repetitions 
+
+
+Based on these observations, we conclude that, to some extent, programmers exhibit less linear reading behaviors when reading Python code compared to Java. Specifically, they show lower Vertical Later, Vertical Next, and Horizontal Later rates and perform more long-distance jumps while reading Python code. However, there is no significant difference in the fraction of reading behaviors that deviate from a linear reading order or in element coverage between the two languages. Furthermore, story order naïve/dynamic scores and execution order naïve/dynamic scores are all significantly higher when reading Python code than Java code. This is primarily because the execution order and story order in Python code snippets tend to be more closely aligned than in Java code snippets. Meanwhile, story order dynamic repetitions and execution order dynamic repetitions indicate that the programming language itself does not significantly impact how many times programmers revisit parts of the code to build understanding. In conclusion, programmers tend to read Python code less linearly than Java code. When reading Python, they skip lines more frequently and scan the code more quickly, rather than following a strict linear reading pattern. A key reason for this behavior could be that Python’s simpler and clearer structure encourages more efficient reading strategies, minimizing unnecessary eye movements and allowing programmers to process the code more fluidly.
+
+
+
+
+3. Source Code Complexity: Comparing to reading more complex source code, programmers read simpler code show: 
+
+no significant difference in Vertical Next rate 
+significantly higher Vertical Later rate (approx. +0.74%)
+significantly higher Horizontal Later rate (approx. + 2.59%)
+significantly lower Regression rate (approx. -3.02%)
+significantly lower Line Regression rate (approx. -2.25%)
+no significant difference in Saccade Length
+significantly higher Element Coverage (approx. +3.07%)
+no significant difference in Story Order Naive Score
+no signifiant difference in Story Order Dynamic Score
+no significant differene in Story Order Dynamic Repetitions 
+significantly lower Execution Order Naive Score (approx. -14.84)
+no significant difference in Execution Order Dynamic Score 
+significantly higher Execution Order Dynamic Repetitions (approx. +0.45)
+
+
+We observe that when reading simpler code snippets, programmers exhibit fewer regressions and line regressions. This is intuitive, as they do not need to frequently reread certain parts of the code to comprehend the program. Additionally, they show higher vertical later and horizontal later rates, suggesting that, compared to reading more complex code, their reading patterns are more linear. Interestingly, programmers show higher element coverage when reading simpler code, which may seem counterintuitive at first. A plausible explanation is that simpler code lacks particularly difficult sections that would otherwise draw more focused attention. As a result, programmers read more smoothly and linearly, naturally covering more of the code. In contrast, when reading complex code, they tend to jump across lines, likely to focus on challenging segments and build a broader understanding of the program. Moreover, the execution order naive score suggests that programmers are less inclined to follow the execution order when reading simpler code, which aligns with our previous findings. However, in general, both story order and execution order scores do not provide clear evidence of which model better aligns with the actual reading pattern. So in conclusion, we can say when reading simpler source code, programmers tend to adopt a more linear and structured reading approach.
+
+
+4. 2-stages hypothesis: Comparing to stage 1 of programmer's comprehension process, the stage 2 shows: 
+
+very significantly lower Vertical Next rate (approx. -4.53%)
+very significantly lower Vertical Later rate (approx. -2.25%)
+very significantly lower Horizontal Later rate (approx. -2.09%)
+very significantly higher Regression rate (approx. +1.83%)
+no significant difference in Line Regression rate
+very significantly higher Saccade Length (approx. +19.18) 
+very significantly higher Element Coverage (approx. +1.13%)
+very significantly lower Story Order Naive Score (approx. -15.52)
+very significantly lower Story Order Dynamic Score (approx. -13.88)
+very significantly higher Story Order Dynamic Repetitions (approx. +0.25)
+very significantly lower Execution Order Naive Score (approx. -19.31)
+very significantly lower Execution Order Dynamic Score (approx. -19.35)
+not very significantly Execution Order Dynamic Repetitions (approx. +0.06)
+
+
+Our 2-stages hypothesis proposes that the process of programmers’ source code comprehension can be divided into two distinct stages. In the first stage, they read the code more linearly to familiarize themselves with its structure and develop an initial impression. In the second stage, they begin to jump across lines and rervisit previous parts, adopting a less linear reading pattern to focus on key parts of the code. From our analysis, we observe that, compared to stage 1, programmers exhibit lower Vertical Next, Vertical Later, and Horizontal Later rates in the second stage, while showing a higher Regression rate. These differences are statistically significant, indicating that in the second stage, programmers indeed read less linearly and perform more backward saccades to revisit key parts of the code. Additionally, they display a higher saccade length, suggesting a broader reading approach as they engage with the code more selectively. Furthermore, all story order and execution order scores are lower in stage 2 than in stage 1. However, these global metrics are less conclusive, as stage 2 naturally suffers from penalties due to gaps when calculating the scores. In conclusion, our analysis results strongly support the 2-stages hypothesis, demonstrating that programmers shift from a more linear reading approach in the initial stage to a more selective and strategic reading pattern in the later stage.
+
+
+5. 3-stages hypothesis: Comparing to stage 1 of programmer's comprehension process: 
+
+stage 2: significantly lower Vertical Next rate (approx. -1.04%) 
+stage 3: significantly lower Vertical Next rate (approx. -6.33%) 
+
+stage 2: no significant difference in Vertical Later rate
+stage 3: significantly lower Vertical Later rate (approx. -3.03%) 
+
+stage 2: no significant difference in Horizontal Later rate 
+stage 3: significantly lower Horizontal Later rate (approx. -3.09%)
+
+stage 2: no significant difference in Regression rate
+stage 3: significantly higher Regression rate (approx. +2.56%) 
+
+stage 2, stage 3: no significant difference in Line Regression rate
+
+stage 2: significantly higher Saccade Length (approx. + 11.23)
+stage 3: significantly higher Saccade Length (approx. +26.10) 
+
+stage 2: no significant difference in Element Coverage 
+stage 3: significantly higher Element Coverage (approx. + 1.53%) 
+
+stage 2: significantly lower Story Order Naive Score (approx. -6.83) 
+stage 3: significantly lower Story Order Naive Score (approx. -11.00) 
+
+stage 2: significantly lower Story Order Dynamic Score (approx. -6.99)
+stage 3: significantly lower Story Order Dynamic Score (approx. -10.48)
+
+stage 2: significantly higher Story Order Dynamic Repetitions (approx. +0.04)
+stage 3: significantly higher Story Order Dynamic Repetitions (approx. +0.13) 
+
+stage 2: significantly lower Execution Order Naive Score (approx. -11.43) 
+stage 3: significantly lower Execution Order Naive Score (approx. -15.27)
+
+stage 2: significantly lower Execution Order Dynamic Score (approx. -11.62)
+stage 3: significantly lower Execution Order Dynamic Score (approx. -15.28)
+
+stage 2, stage 3: no signficant difference in Execution Order Dynamic Repetitions 
+
+
+We observe that the general pattern here aligns with the results of the 2-stages hypothesis. Specifically, in later stages, participants exhibit lower Vertical Next, Vertical Later, and Horizontal Later rates while showing higher Regression rates. This suggests that in the early stages, participants prefer reading more linearly, whereas in later stages, they shift their comprehension strategy by jumping across lines to focus on specific parts of the code. However, compared to the 2-stages hypothesis, the 3-stage hypothesis reveals a clear transition from stage 2 to stage 3. For instance, although both stage 2 and stage 3 show a lower Vertical Next rate compared to stage 1, the reduction is more pronounced in stage 3. In stage 2, the Vertical Next rate decreases by 1.04%, whereas in stage three, it drops significantly by 6.33%, indicating that while participants read less linearly in stage 2, this non-linearity becomes even more pronounced in stage 3. Similarly, for several other metrics, the difference between stage 1 and stage 2 is not statistically significant, whereas in stage 3, the difference becomes significant. As with the 2-stags hypothesis, the global metrics are not compelling here due to penalties from gaps in score calculations. In conclusion, compared to the 2-stags hypothesis, the 3-stages hypothesis provides a more refined division of the comprehension process. That is, in stage 1, participants primarily read the code in a relatively linear manner. In stage 2, they gradually start to read less linearly and in stage 3, they fully transition to a non-linear comprehension strategy. Overall, our analysis shows the clear transition from each stage to the next stage, which supports 3-stages hypothesis as a more precise representation of how programmers comprehend source code while the time evolves than 2-stages hypothesis. 
+
+
+
+
+
+
+
+

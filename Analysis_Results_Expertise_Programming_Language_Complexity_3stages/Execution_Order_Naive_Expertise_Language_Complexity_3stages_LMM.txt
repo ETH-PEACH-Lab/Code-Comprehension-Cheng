@@ -1,0 +1,47 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: Execution_Order_Naive_Score ~ Expertise + Programming_Language +  
+    Complexity + Stage + (1 | Participant)
+   Data: all_metrics_df
+
+REML criterion at convergence: 6798.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.7650 -0.4797  0.0382  0.5722  2.6451 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ Participant (Intercept)  77.0     8.775  
+ Residual                213.5    14.611  
+Number of obs: 813, groups:  Participant, 159
+
+Fixed effects:
+                           Estimate Std. Error t value
+(Intercept)                -27.4119     2.2432 -12.220
+Expertiselow                -1.0157     2.8654  -0.354
+Expertisemedium             -3.2329     2.3599  -1.370
+Expertisenone                2.4437     4.6335   0.527
+Programming_LanguagePython  22.4160     5.4119   4.142
+ComplexityB                 -0.1215     1.0755  -0.113
+Stagestage2                -11.4317     1.2552  -9.108
+Stagestage3                -15.2731     1.2552 -12.168
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn Prg_LP CmplxB Stgst2
+Expertiselw -0.652                                             
+Expertismdm -0.793  0.621                                      
+Expertisenn -0.405  0.316   0.384                              
+Prgrmmng_LP -0.010  0.000  -0.107   0.000                      
+ComplexityB -0.247 -0.005  -0.002   0.003   0.041              
+Stagestage2 -0.280  0.000   0.000   0.000   0.000  0.000       
+Stagestage3 -0.280  0.000   0.000   0.000   0.000  0.000  0.500
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Execution_Order_Naive_Score
+                        Chisq Df Pr(>Chisq)    
+Expertise              3.4434  3     0.3282    
+Programming_Language  17.1561  1  3.443e-05 ***
+Complexity             0.0128  1     0.9101    
+Stage                160.2539  2  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,0 +1,10 @@
+Unnamed: 0,trial,participant,code_file,code_language,timestamp,duration,x_cord,y_cord,aoi_x,aoi_y,aoi_width,aoi_height,token,length,srcML,quality,line,part,complexity,stage
+3247,2,204,vehicle_java.jpg,vehicle_java.jpg,6102751550,64,820.868125,250.6,732,247,143,18,this.producer,13,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,55,5,1,B,stage3
+3248,2,204,vehicle_java.jpg,vehicle_java.jpg,6103847574,132,702.8084848,473.0063636,669,479,68,18,public,6,class->block->function->type->specifier,55,10,1,B,stage3
+3249,2,204,vehicle_java.jpg,vehicle_java.jpg,6105099407,96,897.34,751.1629167,810,733,189,19,this.currentSpeed,17,class->block->function->block->block_content->return->expr->name->name->operator->name,55,16,2,B,stage3
+3250,2,204,vehicle_java.jpg,vehicle_java.jpg,6105239369,80,923.7825,751.0515,810,733,189,19,this.currentSpeed,17,class->block->function->block->block_content->return->expr->name->name->operator->name,55,16,2,B,stage3
+3251,2,204,vehicle_java.jpg,vehicle_java.jpg,6105327341,56,922.79,748.6414286,810,733,189,19,this.currentSpeed,17,class->block->function->block->block_content->return->expr->name->name->operator->name,55,16,2,B,stage3
+3252,2,204,vehicle_java.jpg,vehicle_java.jpg,6106431179,80,810.59,879.003,820,881,11,17,v,1,class->block->function->block->block_content->decl_stmt->decl->name,55,19,2,B,stage3
+3253,2,204,vehicle_java.jpg,vehicle_java.jpg,6106727179,56,726.3785713999999,854.515,669,839,68,18,public,6,class->block->function->type->specifier,55,18,1,B,stage3
+3254,2,204,vehicle_java.jpg,vehicle_java.jpg,6108051093,80,782.6825,882.857,730,881,78,17,Vehicle,7,class->block->function->block->block_content->decl_stmt->decl->type->name,55,19,1,B,stage3
+3255,2,204,vehicle_java.jpg,vehicle_java.jpg,6108867012,152,872.4515788999998,895.1076316,864,881,34,17,new,3,class->block->function->block->block_content->decl_stmt->decl->init->expr->operator,55,19,4,B,stage3

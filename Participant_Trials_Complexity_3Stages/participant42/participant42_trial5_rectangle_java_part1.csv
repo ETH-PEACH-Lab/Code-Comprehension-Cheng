@@ -1,0 +1,16 @@
+Unnamed: 0,trial,participant,code_file,code_language,timestamp,duration,x_cord,y_cord,aoi_x,aoi_y,aoi_width,aoi_height,token,length,srcML,quality,line,part,complexity,stage
+15176,5,42,rectangle_java2.jpg,rectangle_java2.jpg,483898136,72,806.9283333,333.4261111,809,333,10,16,=,1,class->block->constructor->block->block_content->expr_stmt->expr->operator,80,4,2,A,stage1
+15177,5,42,rectangle_java2.jpg,rectangle_java2.jpg,484830076,84,830.1719048,265.4195238,836,262,18,16,y1,2,class->block->decl_stmt->decl->name,80,2,5,A,stage1
+15178,5,42,rectangle_java2.jpg,rectangle_java2.jpg,485077897,60,896.8713332999998,294.85,894,297,18,16,x1,2,class->block->constructor->parameter_list->parameter->decl->type->name,80,3,5,A,stage1
+15179,5,42,rectangle_java2.jpg,rectangle_java2.jpg,485145925,64,896.196875,300.698125,894,297,18,16,x1,2,class->block->constructor->parameter_list->parameter->decl->type->name,80,3,5,A,stage1
+15180,5,42,rectangle_java2.jpg,rectangle_java2.jpg,485282007,76,938.4815789,288.2310526,943,297,27,16,int,3,class->block->constructor->parameter_list->parameter->decl->type->name,80,3,7,A,stage1
+15181,5,42,rectangle_java2.jpg,rectangle_java2.jpg,485838017,120,957.9183333,309.8296667,943,297,27,16,int,3,class->block->constructor->parameter_list->parameter->decl->type->name,80,3,7,A,stage1
+15182,5,42,rectangle_java2.jpg,rectangle_java2.jpg,486905897,60,804.4886667000001,379.668,809,370,10,15,=,1,class->block->constructor->block->block_content->expr_stmt->expr->operator,80,5,2,A,stage1
+15183,5,42,rectangle_java2.jpg,rectangle_java2.jpg,487409677,56,849.325,322.0935714,859,333,5,16,;,1,class->block->constructor->block->block_content->expr_stmt,80,4,4,A,stage1
+15184,5,42,rectangle_java2.jpg,rectangle_java2.jpg,487845928,72,774.0483333,363.4561111,734,370,65,15,this.y1,7,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,80,5,1,A,stage1
+15185,5,42,rectangle_java2.jpg,rectangle_java2.jpg,488137881,116,735.4055172000001,557.2182759,741,552,27,16,int,3,class->block->function->type->name,80,10,2,A,stage1
+15186,5,42,rectangle_java2.jpg,rectangle_java2.jpg,488197892,56,743.0692857,557.86,741,552,27,16,int,3,class->block->function->type->name,80,10,2,A,stage1
+15187,5,42,rectangle_java2.jpg,rectangle_java2.jpg,488402163,120,840.3963332999999,554.888,849,552,5,16,(,1,class->block->function->parameter_list,80,10,4,A,stage1
+15188,5,42,rectangle_java2.jpg,rectangle_java2.jpg,488542094,80,984.734,546.154,972,552,64,16,this.y2,7,class->block->function->block->block_content->return->expr->name->name->operator->name,80,10,8,A,stage1
+15189,5,42,rectangle_java2.jpg,rectangle_java2.jpg,488809712,60,1066.240667,551.202,1068,552,65,16,-,1,class->block->function->block->block_content->return->expr->operator,80,10,9,A,stage1
+15190,5,42,rectangle_java2.jpg,rectangle_java2.jpg,488893722,80,1062.873,546.246,1068,552,65,16,-,1,class->block->function->block->block_content->return->expr->operator,80,10,9,A,stage1

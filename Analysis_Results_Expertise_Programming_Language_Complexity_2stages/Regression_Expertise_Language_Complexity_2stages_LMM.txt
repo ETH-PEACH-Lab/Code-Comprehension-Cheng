@@ -1,0 +1,47 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: Regression_Rate ~ Expertise + Programming_Language + Complexity +  
+    Stage + (1 | Participant)
+   Data: all_metrics_df
+
+REML criterion at convergence: -1611.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.9592 -0.5883  0.0534  0.5614  3.0518 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ Participant (Intercept) 0.001210 0.03479 
+ Residual                0.001976 0.04445 
+Number of obs: 542, groups:  Participant, 159
+
+Fixed effects:
+                            Estimate Std. Error t value
+(Intercept)                 0.248817   0.008446  29.461
+Expertiselow               -0.004669   0.011128  -0.420
+Expertisemedium            -0.006911   0.009166  -0.754
+Expertisenone              -0.013608   0.017988  -0.757
+Programming_LanguagePython  0.007377   0.020901   0.353
+ComplexityB                -0.029941   0.004019  -7.449
+Stagestage2                 0.018254   0.003819   4.780
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn Prg_LP CmplxB
+Expertiselw -0.674                                      
+Expertismdm -0.819  0.622                               
+Expertisenn -0.418  0.317   0.385                       
+Prgrmmng_LP -0.010  0.000  -0.108   0.000               
+ComplexityB -0.245 -0.005  -0.002   0.003   0.040       
+Stagestage2 -0.226  0.000   0.000   0.000   0.000  0.000
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Regression_Rate
+                       Chisq Df Pr(>Chisq)    
+Expertise             0.8378  3     0.8404    
+Programming_Language  0.1246  1     0.7241    
+Complexity           55.4925  1  9.382e-14 ***
+Stage                22.8469  1  1.754e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+

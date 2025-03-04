@@ -1,0 +1,49 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: 
+Execution_Order_Dynamic_Repetitions ~ Expertise + Programming_Language +  
+    Complexity + Stage + (1 | Participant)
+   Data: all_metrics_df
+
+REML criterion at convergence: -252.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.9058 -0.3378 -0.1671  0.0994  8.3683 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ Participant (Intercept) 0.006791 0.08241 
+ Residual                0.035932 0.18956 
+Number of obs: 813, groups:  Participant, 159
+
+Fixed effects:
+                            Estimate Std. Error t value
+(Intercept)                 0.955082   0.024943  38.291
+Expertiselow                0.010972   0.030816   0.356
+Expertisemedium             0.061662   0.025370   2.431
+Expertisenone              -0.005302   0.049929  -0.106
+Programming_LanguagePython -0.007888   0.059994  -0.131
+ComplexityB                 0.078301   0.013751   5.694
+Stagestage2                 0.007380   0.016284   0.453
+Stagestage3                 0.025830   0.016284   1.586
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn Prg_LP CmplxB Stgst2
+Expertiselw -0.628                                             
+Expertismdm -0.764  0.619                                      
+Expertisenn -0.390  0.315   0.382                              
+Prgrmmng_LP -0.013  0.000  -0.105   0.000                      
+ComplexityB -0.283 -0.005  -0.002   0.004   0.046              
+Stagestage2 -0.326  0.000   0.000   0.000   0.000  0.000       
+Stagestage3 -0.326  0.000   0.000   0.000   0.000  0.000  0.500
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Execution_Order_Dynamic_Repetitions
+                       Chisq Df Pr(>Chisq)    
+Expertise             8.9846  3     0.0295 *  
+Programming_Language  0.0173  1     0.8954    
+Complexity           32.4225  1   1.24e-08 ***
+Stage                 2.6701  2     0.2631    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

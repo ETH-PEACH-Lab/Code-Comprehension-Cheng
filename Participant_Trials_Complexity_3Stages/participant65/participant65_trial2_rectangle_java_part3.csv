@@ -1,0 +1,19 @@
+Unnamed: 0,trial,participant,code_file,code_language,timestamp,duration,x_cord,y_cord,aoi_x,aoi_y,aoi_width,aoi_height,token,length,srcML,quality,line,part,complexity,stage
+23408,2,65,rectangle_java.jpg,rectangle_java.jpg,3976299272,116,758.2589655,387.9310345,766,384,13,16,=,1,class->block->constructor->block->block_content->expr_stmt->expr->operator,60,6,2,A,stage3
+23409,2,65,rectangle_java.jpg,rectangle_java.jpg,3976367289,64,762.29625,385.59125,766,384,13,16,=,1,class->block->constructor->block->block_content->expr_stmt->expr->operator,60,6,2,A,stage3
+23410,2,65,rectangle_java.jpg,rectangle_java.jpg,3977778909,76,821.0210526000001,302.3268421,824,299,7,16,;,1,class->block->constructor->block->block_content->expr_stmt,60,4,4,A,stage3
+23411,2,65,rectangle_java.jpg,rectangle_java.jpg,3980042986,72,747.1144444,387.0016667,677,384,78,16,this.x2,7,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,60,6,1,A,stage3
+23412,2,65,rectangle_java.jpg,rectangle_java.jpg,3980822934,68,795.1011765,414.8976471,789,426,22,19,y2,2,class->block->constructor->block->block_content->expr_stmt->expr->name->name,60,7,3,A,stage3
+23413,2,65,rectangle_java.jpg,rectangle_java.jpg,3984914702,56,1101.872857,527.1178571,1065,511,79,19,this.x1,7,class->block->function->block->block_content->return->expr->name->name->operator->name,60,9,10,A,stage3
+23414,2,65,rectangle_java.jpg,rectangle_java.jpg,3985882577,84,1053.2552380000002,514.6342857,1043,511,11,19,-,1,class->block->function->block->block_content->return->expr->name->name,60,9,9,A,stage3
+23415,2,65,rectangle_java.jpg,rectangle_java.jpg,3985882577,84,1053.2552380000002,514.6342857,1065,511,79,19,this.x1,7,class->block->function->block->block_content->return->expr->name->name->operator->name,60,9,10,A,stage3
+23416,2,65,rectangle_java.jpg,rectangle_java.jpg,3986210544,60,1135.623333,504.6206667,1065,511,79,19,this.x1,7,class->block->function->block->block_content->return->expr->name->name->operator->name,60,9,10,A,stage3
+23417,2,65,rectangle_java.jpg,rectangle_java.jpg,3987330386,56,713.9235714,543.4614286,696,553,33,19,int,3,class->block->function->type->name,60,10,2,A,stage3
+23418,2,65,rectangle_java.jpg,rectangle_java.jpg,3990658214,72,1150.122778,590.9372222,1144,595,10,19,*,1,class->block->function->block->block_content->return->expr->operator,60,11,11,A,stage3
+23419,2,65,rectangle_java.jpg,rectangle_java.jpg,3990734142,64,1152.594375,600.09,1144,595,10,19,*,1,class->block->function->block->block_content->return->expr->operator,60,11,11,A,stage3
+23420,2,65,rectangle_java.jpg,rectangle_java.jpg,3990966074,88,762.6072727000001,671.4459091,676,681,102,18,Rectangle,9,class->block->function->block->block_content->decl_stmt->decl->type->name,60,13,1,A,stage3
+23421,2,65,rectangle_java.jpg,rectangle_java.jpg,3991390159,80,723.4195,669.5795,676,681,102,18,Rectangle,9,class->block->function->block->block_content->decl_stmt->decl->type->name,60,13,1,A,stage3
+23422,2,65,rectangle_java.jpg,rectangle_java.jpg,3993661877,260,1020.023538,672.5003077,923,681,101,18,Rectangle,9,class->block->function->block->block_content->decl_stmt->decl->init->expr->call->name,60,13,5,A,stage3
+23423,2,65,rectangle_java.jpg,rectangle_java.jpg,3994705861,76,1343.007895,611.1484211000001,1347,595,7,19,;,1,class->block->function->block->block_content->return,60,11,15,A,stage3
+23424,2,65,rectangle_java.jpg,rectangle_java.jpg,3999209456,64,911.12625,711.50375,912,722,113,19,rect1.area,10,class->block->function->block->block_content->expr_stmt->expr->call->argument_list->argument->expr->call->name->name->operator->name,60,14,3,A,stage3
+23425,2,65,rectangle_java.jpg,rectangle_java.jpg,4005968749,60,1174.253333,764.8073333,1182,766,7,18,",",1,class->block->function->block->block_content->decl_stmt->decl->init->expr->call->argument_list,60,15,12,A,stage3

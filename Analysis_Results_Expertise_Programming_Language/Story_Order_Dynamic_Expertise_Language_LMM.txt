@@ -1,0 +1,39 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: Story_Order_Dynamic_Score ~ Expertise + Programming_Language +  
+    (1 | Participant)
+   Data: all_metrics_df
+
+REML criterion at convergence: 2800.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.1093 -0.3798  0.0980  0.5163  2.1219 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ Participant (Intercept)  883.7   29.73   
+ Residual                1332.9   36.51   
+Number of obs: 271, groups:  Participant, 159
+
+Fixed effects:
+                           Estimate Std. Error t value
+(Intercept)                 -49.440      7.649  -6.464
+Expertiselow                 -4.940     10.709  -0.461
+Expertisemedium             -11.807      8.817  -1.339
+Expertisenone                22.632     17.342   1.305
+Programming_LanguagePython   51.328     20.675   2.483
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn
+Expertiselw -0.714                        
+Expertismdm -0.867  0.620                 
+Expertisenn -0.441  0.315   0.383         
+Prgrmmng_LP  0.000  0.000  -0.106   0.000 
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Story_Order_Dynamic_Score
+                      Chisq Df Pr(>Chisq)  
+Expertise            5.7299  3    0.12552  
+Programming_Language 6.1634  1    0.01304 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

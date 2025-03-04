@@ -1,0 +1,38 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: Saccade_Length ~ Expertise + Programming_Language + (1 | Participant)
+   Data: all_metrics_df
+
+REML criterion at convergence: 2224.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.7200 -0.4740 -0.0951  0.5065  3.3882 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ Participant (Intercept) 216.19   14.703  
+ Residual                 95.72    9.783  
+Number of obs: 271, groups:  Participant, 159
+
+Fixed effects:
+                           Estimate Std. Error t value
+(Intercept)                  79.541      3.114  25.544
+Expertiselow                 -2.528      4.344  -0.582
+Expertisemedium              -4.298      3.580  -1.201
+Expertisenone                -7.322      7.010  -1.044
+Programming_LanguagePython   18.540      7.957   2.330
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn
+Expertiselw -0.717                        
+Expertismdm -0.870  0.624                 
+Expertisenn -0.444  0.318   0.386         
+Prgrmmng_LP  0.000  0.000  -0.109   0.000 
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Saccade_Length
+                      Chisq Df Pr(>Chisq)  
+Expertise            1.9179  3    0.58962  
+Programming_Language 5.4288  1    0.01981 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

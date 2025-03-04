@@ -1,0 +1,12 @@
+Unnamed: 0,trial,participant,code_file,code_language,timestamp,duration,x_cord,y_cord,aoi_x,aoi_y,aoi_width,aoi_height,token,length,srcML,quality,line,part,complexity,stage
+3256,5,204,rectangle_java.jpg,rectangle_java.jpg,6133895359,60,655.8913332999999,221.696,616,215,80,19,private,7,class->block->decl_stmt->decl->type->specifier,55,2,1,A,stage1
+3257,5,204,rectangle_java.jpg,rectangle_java.jpg,6133983299,76,659.5557895,226.0678947,616,215,80,19,private,7,class->block->decl_stmt->decl->type->specifier,55,2,1,A,stage1
+3258,5,204,rectangle_java.jpg,rectangle_java.jpg,6134103341,72,745.7588889,223.8727778,751,215,23,19,x1,2,class->block->decl_stmt->decl->name,55,2,3,A,stage1
+3259,5,204,rectangle_java.jpg,rectangle_java.jpg,6134839563,64,700.166875,271.928125,695,257,101,19,Rectangle,9,class->block->constructor->name,55,3,2,A,stage1
+3260,5,204,rectangle_java.jpg,rectangle_java.jpg,6135151272,116,786.2489655,259.4844828,695,257,101,19,Rectangle,9,class->block->constructor->name,55,3,2,A,stage1
+3261,5,204,rectangle_java.jpg,rectangle_java.jpg,6135571346,60,716.2833333,357.7706667,677,342,78,19,this.y1,7,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,55,5,1,A,stage1
+3262,5,204,rectangle_java.jpg,rectangle_java.jpg,6136071308,96,828.9391667,386.1533333,824,384,7,16,;,1,class->block->constructor->block->block_content->expr_stmt,55,6,4,A,stage1
+3263,5,204,rectangle_java.jpg,rectangle_java.jpg,6136483262,60,1147.861333,251.6013333,1132,257,34,19,int,3,class->block->constructor->parameter_list->parameter->decl->type->name,55,3,13,A,stage1
+3264,5,204,rectangle_java.jpg,rectangle_java.jpg,6136946775,92,677.4126087000001,544.7469565,616,553,69,19,public,6,class->block->function->type->specifier,55,10,1,A,stage1
+3265,5,204,rectangle_java.jpg,rectangle_java.jpg,6137046994,96,674.4516667,540.74375,616,553,69,19,public,6,class->block->function->type->specifier,55,10,1,A,stage1
+3266,5,204,rectangle_java.jpg,rectangle_java.jpg,6137847132,64,776.9525,564.973125,740,553,68,19,height,6,class->block->function->name,55,10,3,A,stage1

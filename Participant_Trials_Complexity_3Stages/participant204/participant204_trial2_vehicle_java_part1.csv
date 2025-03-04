@@ -1,0 +1,9 @@
+Unnamed: 0,trial,participant,code_file,code_language,timestamp,duration,x_cord,y_cord,aoi_x,aoi_y,aoi_width,aoi_height,token,length,srcML,quality,line,part,complexity,stage
+3231,2,204,vehicle_java.jpg,vehicle_java.jpg,6089480648,68,786.9894118,369.2,732,374,189,18,this.currentSpeed,17,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,55,8,1,B,stage1
+3232,2,204,vehicle_java.jpg,vehicle_java.jpg,6089624658,56,727.5792857000001,203.4092857,669,201,68,22,public,6,class->block->constructor->specifier,55,4,1,B,stage1
+3233,2,204,vehicle_java.jpg,vehicle_java.jpg,6090092684,56,706.0035713999999,92.73357143,670,99,67,18,String,6,class->block->decl_stmt->decl->type->name,55,2,1,B,stage1
+3234,2,204,vehicle_java.jpg,vehicle_java.jpg,6094064340,96,758.1420833,101.4558333,747,99,91,18,producer,8,class->block->decl_stmt->decl->name,55,2,2,B,stage1
+3235,2,204,vehicle_java.jpg,vehicle_java.jpg,6094232311,56,760.36,71.69857143,756,57,77,18,Vehicle,7,class->name,55,1,3,B,stage1
+3236,2,204,vehicle_java.jpg,vehicle_java.jpg,6096092092,60,947.2246667000002,131.416,838,137,135,22,currentSpeed,12,class->block->decl_stmt->decl->name,55,3,4,B,stage1
+3237,2,204,vehicle_java.jpg,vehicle_java.jpg,6096531937,56,755.0028571,209.1642857,749,201,82,22,Vehicle,7,class->block->constructor->name,55,4,2,B,stage1
+3238,2,204,vehicle_java.jpg,vehicle_java.jpg,6097260031,60,824.2346667,262.3073333,732,247,143,18,this.producer,13,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,55,5,1,B,stage1

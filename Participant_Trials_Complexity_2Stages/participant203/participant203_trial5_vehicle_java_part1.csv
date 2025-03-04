@@ -1,0 +1,27 @@
+Unnamed: 0,trial,participant,code_file,code_language,timestamp,duration,x_cord,y_cord,aoi_x,aoi_y,aoi_width,aoi_height,token,length,srcML,quality,line,part,complexity,stage
+3179,5,203,vehicle_java.jpg,vehicle_java.jpg,14872324293,116,705.1531034,131.13931029999998,717,137,88,22,topSpeed,8,class->block->decl_stmt->decl->name,70,3,2,B,stage1
+3180,5,203,vehicle_java.jpg,vehicle_java.jpg,14872404344,76,697.9484211,136.8452632,671,137,32,22,int,3,class->block->decl_stmt->decl->type->name,70,3,1,B,stage1
+3181,5,203,vehicle_java.jpg,vehicle_java.jpg,14872504388,96,706.63875,137.0733333,717,137,88,22,topSpeed,8,class->block->decl_stmt->decl->name,70,3,2,B,stage1
+3182,5,203,vehicle_java.jpg,vehicle_java.jpg,14872748386,56,748.7942857,110.7678571,747,99,91,18,producer,8,class->block->decl_stmt->decl->name,70,2,2,B,stage1
+3183,5,203,vehicle_java.jpg,vehicle_java.jpg,14873720101,168,891.0492857,197.72690480000003,861,201,66,22,String,6,class->block->constructor->parameter_list->parameter->decl->type->name,70,4,4,B,stage1
+3184,5,203,vehicle_java.jpg,vehicle_java.jpg,14873887867,164,888.4058537000001,198.345122,861,201,66,22,String,6,class->block->constructor->parameter_list->parameter->decl->type->name,70,4,4,B,stage1
+3185,5,203,vehicle_java.jpg,vehicle_java.jpg,14874680199,168,884.7557142999999,237.5266667,886,247,12,18,=,1,class->block->constructor->block->block_content->expr_stmt->expr->operator,70,5,2,B,stage1
+3186,5,203,vehicle_java.jpg,vehicle_java.jpg,14874796221,56,869.6964286,241.8078571,732,247,143,18,this.producer,13,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,70,5,1,B,stage1
+3187,5,203,vehicle_java.jpg,vehicle_java.jpg,14874860221,60,859.5106667000001,237.5933333,732,247,143,18,this.producer,13,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,70,5,1,B,stage1
+3188,5,203,vehicle_java.jpg,vehicle_java.jpg,14875292024,132,760.5569697000001,301.2639394,732,289,98,18,this.type,9,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,70,6,1,B,stage1
+3189,5,203,vehicle_java.jpg,vehicle_java.jpg,14876176101,112,752.5717857000001,364.9617857,732,374,189,18,this.currentSpeed,17,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,70,8,1,B,stage1
+3190,5,203,vehicle_java.jpg,vehicle_java.jpg,14876556162,120,796.4196667,348.2323333,732,331,144,18,this.topSpeed,13,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,70,7,1,B,stage1
+3191,5,203,vehicle_java.jpg,vehicle_java.jpg,14877223928,132,753.890303,472.1584848,749,479,32,18,int,3,class->block->function->type->name,70,10,2,B,stage1
+3192,5,203,vehicle_java.jpg,vehicle_java.jpg,14878043916,84,719.9204762,528.2133333,731,522,21,19,if,2,class->block->function->block->block_content->if_stmt->if,70,11,1,B,stage1
+3193,5,203,vehicle_java.jpg,vehicle_java.jpg,14878119927,72,724.3883333,519.7166666999999,731,522,21,19,if,2,class->block->function->block->block_content->if_stmt->if,70,11,1,B,stage1
+3194,5,203,vehicle_java.jpg,vehicle_java.jpg,14878195939,72,721.3422222,513.6661111000001,731,522,21,19,if,2,class->block->function->block->block_content->if_stmt->if,70,11,1,B,stage1
+3195,5,203,vehicle_java.jpg,vehicle_java.jpg,14878335742,60,938.2906667,496.19,940,479,32,18,int,3,class->block->function->parameter_list->parameter->decl->type->name,70,10,5,B,stage1
+3196,5,203,vehicle_java.jpg,vehicle_java.jpg,14878491628,152,923.3586842,487.4671053,920,479,6,18,(,1,class->block->function->parameter_list,70,10,4,B,stage1
+3197,5,203,vehicle_java.jpg,vehicle_java.jpg,14878631811,116,766.4882759,482.3351723999999,749,479,32,18,int,3,class->block->function->type->name,70,10,2,B,stage1
+3198,5,203,vehicle_java.jpg,vehicle_java.jpg,14878835794,64,774.43875,491.180625,749,479,32,18,int,3,class->block->function->type->name,70,10,2,B,stage1
+3199,5,203,vehicle_java.jpg,vehicle_java.jpg,14878899810,60,807.1239999999999,487.2373333000001,793,479,111,18,accelerate,10,class->block->function->name,70,10,3,B,stage1
+3200,5,203,vehicle_java.jpg,vehicle_java.jpg,14879427810,120,765.2933333,517.2846666999999,768,522,5,19,(,1,class->block->function->block->block_content->if_stmt->if->condition,70,11,2,B,stage1
+3201,5,203,vehicle_java.jpg,vehicle_java.jpg,14879527808,96,771.4675,511.4808333,768,522,5,19,(,1,class->block->function->block->block_content->if_stmt->if->condition,70,11,2,B,stage1
+3202,5,203,vehicle_java.jpg,vehicle_java.jpg,14880995681,68,821.8076470999999,523.1864706,810,522,189,19,this.currentSpeed,17,class->block->function->block->block_content->if_stmt->if->condition->expr->name->name->operator->name,70,11,4,B,stage1
+3203,5,203,vehicle_java.jpg,vehicle_java.jpg,14881183670,68,798.7211765,323.76588239999995,732,331,144,18,this.topSpeed,13,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,70,7,1,B,stage1
+3204,5,203,vehicle_java.jpg,vehicle_java.jpg,14881379648,76,831.0710526,331.50052630000005,732,331,144,18,this.topSpeed,13,class->block->constructor->block->block_content->expr_stmt->expr->name->name->operator->name,70,7,1,B,stage1
