@@ -12,14 +12,14 @@ All preprocessing scripts for the corrected EMIP dataset are located in the `Pre
 
 To split the data by participant and trial, run `split_corrected_data_into_participants_trials.py`. This script creates separate directories for each participant and saves each trial as an individual `.csv` file within the corresponding participant’s directory.
 
-To incorporate complexity levels, run `adding_complexity_value.py`. This script appends a new column labeled "complexity", indicating the complexity level of each trial based on stimulis.
+To incorporate complexity levels, run `adding_complexity_value.py`. This script appends a new column labeled "complexity", indicating the complexity level of each trial based on stimulis. Alternatively, run  `adding_complexity_value_new_categorization.py` which is based on another categorization of code snippets. 
 
 To analyze different stages of the comprehension process, trials can be segmented into timeframes. Run `separating_trial_into_two_parts.py` to split each trial into two equally long timeframes. The two segments are saved as separate `.csv` files. Similarly, running `separating_trial_into_three_parts.py` divides each trial into three equally long timeframes, saving the three segments as distinct `.csv` files.
 
 
 ## Analysis
 
-The directories `Computing Metrics/`, `Computing Metrics Complexity/`, `Computing Metrics Complexity_2stages/`, and `Computing Metrics Complexity_3stages/` contain scripts for computing local and global metrics. Each directory provides similar functionality with slight adjustments tailored to different research questions. Please select the directory that aligns with the specific research question you are investigating. The `Computing Metrics/` directory serves as the base version. 
+The directories `Computing Metrics/`, `Computing Metrics Complexity/`, `Computing Metrics Complexity New Categorization/`, `Computing Metrics Complexity_2stages/`, and `Computing Metrics Complexity_3stages/` contain scripts for computing local and global metrics. Each directory provides similar functionality with slight adjustments tailored to different research questions. Please select the directory that aligns with the specific research question you are investigating. The `Computing Metrics/` directory serves as the base version. 
 
 To compute local metrics, run `Computing_local_metrics.py`. The summary of resulting local metrics is stored in a `.csv` file. 
 
@@ -32,7 +32,13 @@ The script `NW_Algorithm.py` contains the implementation of the Needleman-Wunsch
 
 ## Statistics
 
-The directories `Data_Analysis_LMM_Code/`, `Data_Analysis_Complexity_LMM_Code/`, `Data_Analysis_Complexity_2stages_LMM_Code/`, `Data_Analysis_Complexity_3stages_LMM_Code/` contain statistical analysis scripts written in R. Each directory corresponds to a different research question, so please select the appropriate directory that aligns with your investigation. The `Data_Analysis_LMM_Code/` directory serves as the base version. Each R file under these directories contains a single regression model for one linearity measure, includng Element Coverage, Execution Order Dynamic Score, Execuion Order Dynamic Repetitions, Execution Order Naive Score, Horizontal Later Rate, Line Regression Rate, Regression Rate, Saccade Length, Story Order Dynamic Score, Story Order Dynamic Repetitions, Story Order Naive Score, Vertical Later Rate and Vertical Next Rate. The outputs are saved in `Analysis_Results_Expertise_Programming_Language/`, `Analysis_Results_Expertise_Programming_Language_Complexity/`, `Analysis_Results_Expertise_Programming_Language_Complexity_2stages/`, `Analysis_Results_Expertise_Programming_Language_Complexity_3stages/` respectively. 
+The directories `Data_Analysis_LMM_Code/`, `Data_Analysis_Complexity_LMM_Code/`, `Data_Analysis_Complexity_New_Categorization_LMM_Code/`, `Data_Analysis_Complexity_2stages_LMM_Code/`, `Data_Analysis_Complexity_3stages_LMM_Code/` contain statistical analysis scripts written in R. Each directory corresponds to a different research question, so please select the appropriate directory that aligns with your investigation. The `Data_Analysis_LMM_Code/` directory serves as the base version. Each R file under these directories contains a single regression model for one linearity measure, includng Element Coverage, Execution Order Dynamic Score, Execuion Order Dynamic Repetitions, Execution Order Naive Score, Horizontal Later Rate, Line Regression Rate, Regression Rate, Saccade Length, Story Order Dynamic Score, Story Order Dynamic Repetitions, Story Order Naive Score, Vertical Later Rate and Vertical Next Rate. The outputs are saved in `Analysis_Results_Expertise_Programming_Language/`, `Analysis_Results_Expertise_Programming_Language_Complexity/`, `Analysis_Results_Expertise_Programming_Language_Complexity_2stages/`, `Analysis_Results_Expertise_Programming_Language_Complexity_3stages/` respectively. 
+
+
+## Code Complexity Categorization
+
+We propose two different approaches to categorize the code snippets in the EMIP dataset based on their complexity levels. For the first approach, follow the pipeline of `adding_complexity_value.py`, `Computing Metrics Complexity/` and `Data_Analysis_Complexity_LMM_Code/`. For the second approach, follow the pipeline of `adding_complexity_value_new_categorization.py`, `Computing Metrics Complexity New Categorization/` and `Data_Analysis_Complexity_New_Categorization_LMM_Code/`. Please refer to `Measuring the Complexity of the Source Code.txt` for more details about these two categorization methods
+
 
 ## Preliminary Summary
 
