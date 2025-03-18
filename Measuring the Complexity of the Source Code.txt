@@ -1,0 +1,68 @@
+Results of various metrics to measure the code complexity: 
+
+
+1. Cyclomatic Complexity: 
+
+rectangle programs: 1 
+
+vehicle programs: 2
+
+
+
+
+
+2. Linearity Value i (Apel et al., we consider larger values as indicator for higher complexity): 
+
+rectangle_java: 11.67
+
+vehicle_java: 4.167
+
+recangle_python: 15
+
+vehicle_python: 3.27
+
+
+
+
+3. Average of all Variables’ Liveness (in code lines, we consider larger values as indicator for higher complexity): 
+
+rectangle_java: 9
+
+vehicle_java: 7.9
+
+recangle_python: 7.67
+
+vehicle_python: 6.89
+
+
+
+
+4. Halstead Complexity (Difficulty D): 
+
+rectangle_java: 12.98
+
+vehicle_java: 12.83
+
+recangle_python: 7.33
+
+vehicle_python: 6.18
+
+
+
+
+
+Firstly, we notice that the cyclomatic complexity of these code snippets makes no significant difference, so we decide not take it into account when categorizing the code snippets into groups of different complexity levels. Besides, both the average liveness of variables and Halstead Complexity (Difficulty D) indicates that java programs are more complex than python programs and rectangle programs are more complex than vehicle programs. Additionally, linearity values support the claim that rectangle programs are less linear (and thus more complex) than vehicle programs. However, we found that linearity values do not provide a clear distinction between Java and Python programs. This is primarily due to structural differences between the languages: Python programs lack a main method which affects the calculation of average method length and Python does not use braces that impacts the calculation of jump distance. Since Apel et al. originally proposed the linearity metric based on Java code snippets, it is likely not designed for cross-language comparisons. Given these limitations, we conclude that linearity should only be used to compare programs within the same language.
+
+
+We explored different methods to consolidate various complexity metrics into a single complexity score. However, we found that each metric captures different aspects of complexity, making it difficult to establish a universal measure. Additionally, assigning different weights to these metrics is inherently subjective and depends on the study’s purpose. As a result, calculating a single weighted sum to represent overall complexity is not a feasible solution. Instead, we propose two alternative categorization approaches in our case. 
+
+
+The first one is categorizing rectangle_java and rectangle_python to group A and vehicle_java and vehicle_python to group B, with complexity level A > B. This grouping is based on the consistent finding that rectangle programs are more complex than vehicle programs across all metrics. Additionally, this categorization ensures a more balanced distribution of samples across the groups.
+
+
+In the second approach, rectangle programs (both Java and Python) are categorized as group A, vehicle programs written in Java form group B, and vehicle programs written in Python are placed in group C, with complexity level A > B > C. This approach accounts for both the complexity differences between rectangle and vehicle programs as well as the potential complexity differences between Java and Python programs. However, due to the limitation of EMIP dataset, this categorization leads to an unbalanced distribution, with very few samples in the second and third groups while the majority of samples remain in the first group. As a result, this approach is not statistically feasible for meaningful analysis.
+
+
+
+
+
