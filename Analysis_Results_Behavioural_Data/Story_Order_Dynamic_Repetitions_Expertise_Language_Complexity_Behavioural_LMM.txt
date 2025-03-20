@@ -1,0 +1,52 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: Comprehension_Result ~ Expertise + Story_Order_Dynamic_Repetitions +  
+    Complexity + Programming_Language + (1 | Participant)
+   Data: all_metrics_df
+
+     AIC      BIC   logLik deviance df.resid 
+   315.1    343.9   -149.5    299.1      263 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.0532 -0.5943 -0.4186  0.6198  2.4765 
+
+Random effects:
+ Groups      Name        Variance  Std.Dev. 
+ Participant (Intercept) 2.168e-18 1.473e-09
+Number of obs: 271, groups:  Participant, 159
+
+Fixed effects:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                       1.1304     0.4388   2.576  0.00998 ** 
+Expertiselow                     -0.8744     0.4615  -1.895  0.05813 .  
+Expertisemedium                  -0.3791     0.3729  -1.017  0.30929    
+Expertisenone                    -3.0469     1.1297  -2.697  0.00699 ** 
+Story_Order_Dynamic_Repetitions   0.1028     0.1262   0.815  0.41535    
+ComplexityB                      -2.1005     0.2874  -7.310 2.68e-13 ***
+Programming_LanguagePython       -0.3261     0.9272  -0.352  0.72504    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn S_O_D_ CmplxB
+Expertiselw -0.502                                      
+Expertismdm -0.597  0.611                               
+Expertisenn -0.279  0.206   0.245                       
+Stry_Or_D_R -0.571 -0.086  -0.093   0.051               
+ComplexityB -0.393  0.117   0.059   0.114   0.029       
+Prgrmmng_LP -0.037  0.007  -0.098   0.009   0.016  0.074
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Comprehension_Result
+                                  Chisq Df Pr(>Chisq)    
+Expertise                        9.4510  3    0.02386 *  
+Story_Order_Dynamic_Repetitions  0.6634  1    0.41535    
+Complexity                      53.4330  1  2.676e-13 ***
+Programming_Language             0.1237  1    0.72504    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

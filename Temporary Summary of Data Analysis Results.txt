@@ -147,6 +147,33 @@ We observe that the general pattern here aligns with the results of the 2-stages
 
 
 
+6. Behavioural Data (Correctness of participant's answer to the comprehension question): 
+
+
+Comparing to high expertise: low expertise and none expertise significantly reduces the possibility of correctly answering the comprehension question
+
+the impact of medium expertise is statistically not significant 
+
+
+Comapring to Complexity Group A (more complex code snippets), the possibility of correctly answering the comprehension question is significantly lower after reading less complex code snippets 
+
+
+Higher Element Coverage significantly increases the possibility of correctly answering the comprehension question 
+
+Higher Line Regression rate significantly increases the possibility of correctly answering the comprehension question 
+
+
+The impact of all other local / global metrics and programming language is statistically not significant 
+
+
+The analysis reveals that participants with higher expertise are generally more likely to answer the comprehension question correctly as expected. This aligns with intuition, as greater programming experience naturally enhances the ability to understand and analyze code. However, an unexpected finding is that participants are actually less likely to answer the comprehension question correctly after reading the less complex code snippets compared to the more complex ones. This result appears counter-intuitive at first but can be explained by the nature of the comprehension questions themselves. The key issue lies in the fact that the complexity of the code snippets is not explicitly reflected in the comprehension questions. The questions for the rectangle programs (Complexity Group A, more complex) are simpler and allow participants to extract the correct answer directly from the code, even if they do not fully understand the program's logic. For instance, in rectangle_java.jpg, the answer can be found between lines 9 and 11 which makes it accessible even to participants with lower expertise. In contrast, the questions for the vehicle programs (Complexity Group B, less complex) require a deeper understanding of the program’s overall functionality, particularly the logic behind the accelerate function. This means that participants who rely on surface-level reading strategies are less likely to perform well when faced with more conceptually demanding questions.
+
+Additionally, the analysis indicates that higher element coverage and an increased line regression rate significantly improve the likelihood of answering the comprehension question correctly. This is intuitive. Higher element coverage suggests that a participant reads the entire program more thoroughly that ensures they engage with all relevant parts of the code, while a higher line regression rate implies more frequent rereading of specific lines, which can help reinforce understanding and clarify ambiguities of lines which could be relevant for answering the comprehension question. Both behaviors are beneficial for answering comprehension questions correctly.
+
+However, beyond these two factors, the impact of other local and global metrics was found to be statistically insignificant. As a result, we can't conclude with certainty that a higher linearity in reading patterns directly correlates with improved comprehension accuracy. While certain reading behaviors, such as revisiting key parts of the code appear beneficial, the relationship between overall reading linearity and comprehension remains inconclusive based on the current results of analysis. 
+
+
+
 
 
 

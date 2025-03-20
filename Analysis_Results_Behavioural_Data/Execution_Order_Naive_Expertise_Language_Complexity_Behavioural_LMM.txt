@@ -1,0 +1,52 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: Comprehension_Result ~ Expertise + Execution_Order_Naive_Score +  
+    Complexity + Programming_Language + (1 | Participant)
+   Data: all_metrics_df
+
+     AIC      BIC   logLik deviance df.resid 
+   315.2    344.0   -149.6    299.2      263 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.0016 -0.5791 -0.4133  0.6229  2.3971 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ Participant (Intercept) 0        0       
+Number of obs: 271, groups:  Participant, 159
+
+Fixed effects:
+                             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                  1.228249   0.391807   3.135  0.00172 ** 
+Expertiselow                -0.868944   0.460989  -1.885  0.05944 .  
+Expertisemedium             -0.384635   0.375162  -1.025  0.30525    
+Expertisenone               -3.067097   1.128639  -2.718  0.00658 ** 
+Execution_Order_Naive_Score -0.001613   0.002288  -0.705  0.48087    
+ComplexityB                 -2.142579   0.291166  -7.359 1.86e-13 ***
+Programming_LanguagePython  -0.250022   0.938150  -0.267  0.78985    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn E_O_N_ CmplxB
+Expertiselw -0.588                                      
+Expertismdm -0.677  0.614                               
+Expertisenn -0.296  0.208   0.245                       
+Exctn_O_N_S  0.388  0.085   0.129  -0.040               
+ComplexityB -0.352  0.131   0.082   0.105   0.166       
+Prgrmmng_LP -0.083 -0.003  -0.112   0.014  -0.135  0.051
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Comprehension_Result
+                              Chisq Df Pr(>Chisq)    
+Expertise                    9.4911  3    0.02343 *  
+Execution_Order_Naive_Score  0.4969  1    0.48087    
+Complexity                  54.1491  1  1.858e-13 ***
+Programming_Language         0.0710  1    0.78985    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

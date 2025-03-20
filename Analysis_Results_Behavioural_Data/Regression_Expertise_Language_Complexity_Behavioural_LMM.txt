@@ -1,0 +1,53 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: Comprehension_Result ~ Expertise + Regression_Rate + Complexity +  
+    Programming_Language + (1 | Participant)
+   Data: all_metrics_df
+
+     AIC      BIC   logLik deviance df.resid 
+   314.7    343.5   -149.3    298.7      263 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.5851 -0.5935 -0.4098  0.6119  2.4345 
+
+Random effects:
+ Groups      Name        Variance  Std.Dev. 
+ Participant (Intercept) 5.444e-14 2.333e-07
+Number of obs: 271, groups:  Participant, 159
+
+Fixed effects:
+                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                  0.5024     0.8889   0.565  0.57196    
+Expertiselow                -0.8419     0.4587  -1.835  0.06646 .  
+Expertisemedium             -0.3311     0.3721  -0.890  0.37356    
+Expertisenone               -3.0334     1.1278  -2.690  0.00715 ** 
+Regression_Rate              3.2482     3.1907   1.018  0.30867    
+ComplexityB                 -2.0257     0.2972  -6.817 9.32e-12 ***
+Programming_LanguagePython  -0.3642     0.9375  -0.389  0.69764    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn Rgrs_R CmplxB
+Expertiselw -0.263                                      
+Expertismdm -0.364  0.608                               
+Expertisenn -0.163  0.211   0.253                       
+Regressn_Rt -0.914 -0.012   0.046   0.044               
+ComplexityB -0.413  0.112   0.071   0.117   0.255       
+Prgrmmng_LP  0.012  0.009  -0.097   0.007  -0.029  0.066
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Comprehension_Result
+                       Chisq Df Pr(>Chisq)    
+Expertise             9.3706  3    0.02475 *  
+Regression_Rate       1.0364  1    0.30867    
+Complexity           46.4666  1  9.319e-12 ***
+Programming_Language  0.1509  1    0.69764    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

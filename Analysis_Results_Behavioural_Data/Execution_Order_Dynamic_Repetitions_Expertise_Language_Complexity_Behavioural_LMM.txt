@@ -1,0 +1,53 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: 
+Comprehension_Result ~ Expertise + Execution_Order_Dynamic_Repetitions +  
+    Complexity + Programming_Language + (1 | Participant)
+   Data: all_metrics_df
+
+     AIC      BIC   logLik deviance df.resid 
+   314.1    342.9   -149.0    298.1      263 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.0716 -0.6077 -0.3971  0.6552  2.5182 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ Participant (Intercept) 0        0       
+Number of obs: 271, groups:  Participant, 159
+
+Fixed effects:
+                                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                           1.0824     0.4109   2.634  0.00844 ** 
+Expertiselow                         -0.9005     0.4641  -1.940  0.05233 .  
+Expertisemedium                      -0.4238     0.3776  -1.122  0.26171    
+Expertisenone                        -3.0482     1.1304  -2.696  0.00701 ** 
+Execution_Order_Dynamic_Repetitions   0.1872     0.1465   1.277  0.20145    
+ComplexityB                          -2.2161     0.3023  -7.331 2.28e-13 ***
+Programming_LanguagePython           -0.3377     0.9185  -0.368  0.71309    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn E_O_D_ CmplxB
+Expertiselw -0.543                                      
+Expertismdm -0.620  0.615                               
+Expertisenn -0.284  0.208   0.245                       
+Exctn_O_D_R -0.472 -0.105  -0.155   0.031               
+ComplexityB -0.240  0.147   0.107   0.101  -0.305       
+Prgrmmng_LP -0.029  0.009  -0.096   0.008   0.000  0.068
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Comprehension_Result
+                                      Chisq Df Pr(>Chisq)    
+Expertise                            9.4624  3    0.02373 *  
+Execution_Order_Dynamic_Repetitions  1.6318  1    0.20145    
+Complexity                          53.7444  1  2.283e-13 ***
+Programming_Language                 0.1352  1    0.71309    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -38,5 +38,8 @@ for participant_folder in os.listdir(input_dir):
 print("Added complexity groups. Results saved in Participant_Trials_Complexity_New_Categorization")
 
 ### This program adds an additional column "complexity" to the original data
-### The complexity is categorized in 2 groups, A and B with group A more complex 
-### The complexity of original code snippet is determined by both cyclomatic complexity and source code linearity 
+### The complexity is categorized in 3 groups, A, B, C with A > B > C with respect to complexity level
+### The complexity of original code snippet is determined by source code linearity value, 
+### Halstead Complexity (Difficulty D), and Average of all Variables’ Liveness 
+### For more details regarding this program and adding_complexity_value.py
+### Please refer to Measuring the Complexity of the Source Code.txt

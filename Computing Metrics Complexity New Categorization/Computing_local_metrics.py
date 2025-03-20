@@ -112,4 +112,4 @@ results_df = pd.DataFrame(results)
 results_df.to_csv(output_file, index=False)
 print(f"Aggregated metrics saved to {output_file}")
 
-## No difference comparing to original version, except for appending the new column "complexity"
+## No difference comparing to original version, except for appending the new column "complexity" (Categorization Approach 2)

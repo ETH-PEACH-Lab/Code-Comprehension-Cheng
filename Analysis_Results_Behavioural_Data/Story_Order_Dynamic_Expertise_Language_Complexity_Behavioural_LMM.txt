@@ -1,0 +1,52 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: Comprehension_Result ~ Expertise + Story_Order_Dynamic_Score +  
+    Complexity + Programming_Language + (1 | Participant)
+   Data: all_metrics_df
+
+     AIC      BIC   logLik deviance df.resid 
+   315.3    344.2   -149.7    299.3      263 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.0037 -0.5820 -0.4197  0.6203  2.4473 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ Participant (Intercept) 0        0       
+Number of obs: 271, groups:  Participant, 159
+
+Fixed effects:
+                            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 1.253834   0.384568   3.260  0.00111 ** 
+Expertiselow               -0.859774   0.460252  -1.868  0.06175 .  
+Expertisemedium            -0.374085   0.373839  -1.001  0.31699    
+Expertisenone              -3.060622   1.128804  -2.711  0.00670 ** 
+Story_Order_Dynamic_Score  -0.001840   0.002985  -0.617  0.53752    
+ComplexityB                -2.128816   0.288764  -7.372 1.68e-13 ***
+Programming_LanguagePython -0.245441   0.945019  -0.260  0.79508    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Exprtsl Exprtsm Exprtsn S_O_D_ CmplxB
+Expertiselw -0.611                                      
+Expertismdm -0.708  0.612                               
+Expertisenn -0.304  0.208   0.245                       
+Stry_Or_D_S  0.344  0.065   0.102  -0.055               
+ComplexityB -0.391  0.126   0.073   0.106   0.108       
+Prgrmmng_LP -0.087 -0.002  -0.110   0.017  -0.161  0.056
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: Comprehension_Result
+                            Chisq Df Pr(>Chisq)    
+Expertise                  9.4318  3    0.02407 *  
+Story_Order_Dynamic_Score  0.3801  1    0.53752    
+Complexity                54.3489  1  1.679e-13 ***
+Programming_Language       0.0675  1    0.79508    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

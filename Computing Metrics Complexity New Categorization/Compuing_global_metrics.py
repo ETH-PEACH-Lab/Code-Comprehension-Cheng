@@ -94,4 +94,4 @@ results_df = pd.DataFrame(results)
 results_df.to_csv(OUTPUT_FILE, index=False)
 print(f"Results saved to {OUTPUT_FILE}")
 
-## No difference comparing to original version, except for appending the new column "complexity"
+## No difference comparing to original version, except for appending the new column "complexity" (Categorization Approach 2)
