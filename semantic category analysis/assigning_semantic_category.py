@@ -3,6 +3,7 @@ import os
 
 input_dir = '/Users/xuancheng/Desktop/master github/Code-Comprehension-Cheng/Participant_Trials_Comprehension_Results'
 output_dir = '/Users/xuancheng/Desktop/master github/Code-Comprehension-Cheng/Participant_Trials_Semantic_Category'
+emip_metadata_file = '/Users/xuancheng/Desktop/Master Thesis /Thesis_Data_Code/emip_dataset/emip_metadata.csv'
 
 os.makedirs(output_dir, exist_ok=True)
 
@@ -187,11 +188,16 @@ for participant_folder in os.listdir(input_dir):
             df = pd.read_csv(trial_file_path)
 
             code_file = df['code_file'].iloc[0]
+            participant = df['participant'].iloc[0]
+            metadata = pd.read_csv(emip_metadata_file)
+            expertise = metadata.loc[metadata['id'] == participant, 'expertise_programming'].values
+            expertise_programming = expertise[0]    
 
             mapping = get_mapping_for_code_snippet(code_file)
 
             df["semantic_category"] = df.apply(lambda row: assign_semantic_category_for_row(row, mapping), axis=1)
-
+            df["expertise"] = expertise_programming
+            
             output_file_path = os.path.join(participant_output_path, trial_file)
             df.to_csv(output_file_path, index=False)
 
