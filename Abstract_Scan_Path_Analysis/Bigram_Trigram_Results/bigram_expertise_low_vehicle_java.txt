@@ -1,0 +1,12 @@
+Top 10 Bigrams for expertise: low in vehicle_java:
+
+Assignment → Assignment: 1512
+Variable Declaration → Variable Declaration: 751
+Conditional Statement → Conditional Statement: 675
+Parameter → Parameter: 334
+Method Declaration → Method Declaration: 230
+Conditional Statement → Assignment: 152
+Constructor Declaration → Constructor Declaration: 142
+Class Declaration → Class Declaration: 135
+Assignment → Conditional Statement: 128
+Argument → Argument: 112

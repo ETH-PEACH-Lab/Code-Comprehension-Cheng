@@ -1,0 +1,12 @@
+Top 10 Bigrams for expertise: medium in vehicle_java:
+
+Assignment → Assignment: 4930
+Conditional Statement → Conditional Statement: 2797
+Variable Declaration → Variable Declaration: 1970
+Parameter → Parameter: 1169
+Method Declaration → Method Declaration: 909
+Conditional Statement → Assignment: 501
+Assignment → Conditional Statement: 453
+Argument → Argument: 417
+Class Declaration → Class Declaration: 327
+Return → Return: 296

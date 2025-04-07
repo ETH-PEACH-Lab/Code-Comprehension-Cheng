@@ -1,0 +1,12 @@
+Top 10 Bigrams for expertise: medium in rectangle_java:
+
+Method Declaration → Method Declaration: 1889
+Variable Declaration → Variable Declaration: 1346
+Parameter → Parameter: 1275
+Argument → Argument: 1229
+Method Call → Method Call: 1075
+Assignment → Assignment: 973
+Variable → Variable: 619
+Object Instantiation → Object Instantiation: 486
+Operator → Operator: 388
+Constructor Declaration → Constructor Declaration: 382

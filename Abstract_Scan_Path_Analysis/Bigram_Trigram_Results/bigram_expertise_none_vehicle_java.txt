@@ -1,0 +1,12 @@
+Top 10 Bigrams for expertise: none in vehicle_java:
+
+Assignment → Assignment: 175
+Variable Declaration → Variable Declaration: 73
+Conditional Statement → Conditional Statement: 60
+Parameter → Parameter: 58
+Method Declaration → Method Declaration: 45
+Constructor Declaration → Constructor Declaration: 31
+Argument → Argument: 23
+Conditional Statement → Assignment: 17
+Class Declaration → Class Declaration: 15
+Assignment → Conditional Statement: 14

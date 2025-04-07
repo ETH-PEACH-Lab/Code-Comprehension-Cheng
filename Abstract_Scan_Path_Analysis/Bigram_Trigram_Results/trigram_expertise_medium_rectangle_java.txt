@@ -1,0 +1,12 @@
+Top 10 Trigrams for expertise: medium in rectangle_java:
+
+Method Declaration → Method Declaration → Method Declaration: 1415
+Variable Declaration → Variable Declaration → Variable Declaration: 909
+Parameter → Parameter → Parameter: 885
+Argument → Argument → Argument: 802
+Assignment → Assignment → Assignment: 737
+Method Call → Method Call → Method Call: 690
+Variable → Variable → Variable: 359
+Object Instantiation → Object Instantiation → Object Instantiation: 243
+Constructor Declaration → Constructor Declaration → Constructor Declaration: 223
+Class Declaration → Class Declaration → Class Declaration: 204

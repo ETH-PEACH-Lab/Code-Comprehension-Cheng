@@ -1,0 +1,12 @@
+Top 10 Trigrams for expertise: none in rectangle_java:
+
+Variable Declaration → Variable Declaration → Variable Declaration: 86
+Method Declaration → Method Declaration → Method Declaration: 65
+Assignment → Assignment → Assignment: 37
+Parameter → Parameter → Parameter: 35
+Argument → Argument → Argument: 34
+Constructor Declaration → Constructor Declaration → Constructor Declaration: 31
+Class Declaration → Class Declaration → Class Declaration: 24
+Variable Declaration → Variable Declaration → Constructor Declaration: 10
+Object Instantiation → Object Instantiation → Object Instantiation: 10
+Method Call → Method Call → Method Call: 9

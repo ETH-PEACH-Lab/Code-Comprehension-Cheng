@@ -1,0 +1,12 @@
+Top 10 Trigrams for expertise: high in vehicle_java:
+
+Assignment → Assignment → Assignment: 1146
+Variable Declaration → Variable Declaration → Variable Declaration: 648
+Conditional Statement → Conditional Statement → Conditional Statement: 475
+Parameter → Parameter → Parameter: 319
+Conditional Statement → Assignment → Assignment: 101
+Method Declaration → Method Declaration → Method Declaration: 101
+Argument → Argument → Argument: 93
+Conditional Statement → Conditional Statement → Assignment: 86
+Assignment → Assignment → Conditional Statement: 82
+Constructor Declaration → Constructor Declaration → Constructor Declaration: 79
