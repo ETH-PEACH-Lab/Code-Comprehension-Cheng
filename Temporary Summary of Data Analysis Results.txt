@@ -199,12 +199,37 @@ For the vehicle program, we observe a consistent pattern across all expertise le
 
 Trigram + Rectangle & Vehicle: 
 
-Our analysis reveals no substantial differences between the trigram and bigram results. This suggests that even trigram sequences fail to capture transitions between distinct semantic categories effectively. In both bigrams and trigrams, the most frequent transitions tend to occur within a single category, often representing tokens located on the same line of source code. This phenomenon is largely attributable to the way we categorize code tokens. Typically, multiple adjacent tokens within a single line—such as those defining a method signature, a variable declaration, or a conditional clause—are all assigned to the same semantic category. As a result, transitions captured by bigrams or trigrams tend to reflect intra-category repetition rather than meaningful navigational shifts between higher-level code constructs.
+Our analysis reveals no substantial differences between the trigram and bigram results. This suggests that even trigram sequences fail to capture transitions between distinct semantic categories effectively. In both bigrams and trigrams, the most frequent transitions tend to occur within a single category, often representing tokens located on the same line of source code. This phenomenon is largely attributable to the way we categorize code tokens. Typically, multiple adjacent tokens within a single line—such as those defining a method signature, a variable declaration, or a conditional clause—are all assigned to the same semantic category. It is very coommon that the participant stays at a single category during just two or three fixations. As a result, transitions captured by bigrams or trigrams tend to reflect intra-category repetition rather than meaningful navigational shifts between higher-level code constructs.
 
 
 
 
+Logistic Regression to predict the comprehension result based on features of abstract scan path:
 
+Approach: 
+
+We trained a logistic regression model to predict participants' comprehension question results using a set of cognitively motivated features derived from abstract scan paths. Specifically, we included:
+
+Cross-category jumps: Number of transitions between different semantic categories
+
+First-return position ratio: How early the participant fixates on a Return category, representing awareness of functional output.
+
+Bigram entropy: The Shannon entropy of the scan path's bigram distribution which is used as a proxy for path complexity and reading diversity.
+
+Max same category length: The longest sequence of consecutive fixations on the same semantic category
+
+To ensure a fair evaluation, we also controlled for potential confounding variables (expertise, complexity, stimulus)
+
+Result: 
+
+precision    recall  f1-score   support
+
+           0       0.76      0.76      0.76        37
+           1       0.71      0.71      0.71        31
+
+    accuracy                           0.74        68
+   macro avg       0.73      0.73      0.73        68
+weighted avg       0.74      0.74      0.74        68
 
 
 
