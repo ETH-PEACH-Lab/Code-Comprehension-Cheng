@@ -174,6 +174,45 @@ However, beyond these two factors, the impact of other local and global metrics 
 
 
 
+7. Bigram and Trigram Analysis 
+
+Bigram + Rectangle program: 
+
+For the rectangle program, we observe that programmers with high and medium levels of expertise exhibit  similar transition patterns. The most dominant bigram across all three groups is Method Declaration → Method Declaration, standing out with a significantly higher frequency compared to all other transitions. The second most frequent transition is Variable Declaration → Variable Declaration, followed by a cluster of transitions involving Parameter, Argument, Method Call, and Assignment, all of which appear with relatively similar frequencies. This pattern suggests that programmers with high, medium and low expertise level primarily approach the comprehension of the rectangle program through its high-level structural organization, particularly focusing on method definitions. After establishing an understanding of the structural framework, their attention shifts to variable declarations, which is consistent with the need to understand what variables are in play. Subsequently, they explore how these variables are manipulated, as reflected by the emphasis on parameters, arguments, method calls, and assignments. This layered focus—from structure, to variable setup, to logical flow—indicates a systematic comprehension strategy centered around how the code functions as a whole.
+
+
+Programmers with low and no programming expertise generally exhibit similar comprehension strategies. However, a key difference emerges in their attention priorities. For low-expertise programmers, the most frequent transition after method declarations is Assignment → Assignment. In contrast, no-expertise programmers exhibit Variable Declaration → Variable Declaration as their top-ranked bigram which surpasses all others. This distinction suggests that for individuals with lower expertise levels, the core of their comprehension process revolves around understanding how variables are manipulated and updated. Low-expertise programmers focus more on the dynamics of assignments which indicates an attempt to trace the flow of values through the code, no-expertise users appear to concentrate on identifying what variables exist in the first place and it suggests that they are still in the early stages of grasping program structure and syntax. In both cases, comprehension is anchored more in local, surface-level elements (such as individual lines and variable usage) rather than in high-level program logic or control flow.
+
+
+
+Bigram + Vehicle program: 
+
+For the vehicle program, we observe that for programms with all different expertise group, the top 1 transition is Assignment -> Assignment and gap between it and other transitions is extremly large. Thus, we can say itself forms the cluster 1. The top 2, top 3 and top 4 transitions are variable declaration, conditional statement and parameter. The difference between these transitions are relatively insignificant. Thus, we can say they form cluster 2. Other transitions are significantly less common, for these reason, they form the last cluster. The main underlying reason for such an observation is that the key logic of vehicle program is the fields of vehicle object and the accelerate function which includes the logic for the update of 'this.currentSpeed' field through a conditional statement. Thus, regarding which expertise group the programmer is from, they always need to focus on these two parts in order to comprehend the program. And this program only has two methods, which are the main method and the accelerate function and the key logic only lies in the accelerate function. That's why the rank 1 transistio(method declaration) in rectangle program doesn't play a role here. 
+
+
+
+For the vehicle program, we observe a consistent pattern across all expertise levels. The most dominant transition by far is Assignment → Assignment, which appears with a markedly higher frequency than any other transition. The gap between this top transition and the rest is so substantial that it can be considered a distinct Cluster 1 on its own. Following that, the second, third, and fourth most frequent transitions are Variable Declaration → Variable Declaration, Conditional Statement → Conditional Statement, and Parameter → Parameter. These transitions occur at relatively similar frequencies, forming a more balanced Cluster 2. All remaining transitions appear far less frequently and can thus be grouped into Cluster 3. The underlying reason behind this distribution likely stems from the core structure of the vehicle program itself. The primary logic revolves around the fields of the Vehicle object and the accelerate method, which contains the key computational logic involving an update to the this.currentSpeed field based on a conditional statement. Regardless of expertise, all programmers must engage with these segments to understand the program’s functionality. Moreover, the vehicle program contains only two methods: the main method and the accelerate method. Importantly, the main logic is confined almost entirely to the accelerate method, which centers on value updates rather than structural definitions. This explains why Method Declaration → Method Declaration, which ranked first in the rectangle program, is largely absent from the top transitions in the vehicle program. In this case, the cognitive effort shifts from understanding structural layout to tracing operational flow, especially variable updates and conditional logic.
+
+
+
+
+
+Trigram + Rectangle & Vehicle: 
+
+Our analysis reveals no substantial differences between the trigram and bigram results. This suggests that even trigram sequences fail to capture transitions between distinct semantic categories effectively. In both bigrams and trigrams, the most frequent transitions tend to occur within a single category, often representing tokens located on the same line of source code. This phenomenon is largely attributable to the way we categorize code tokens. Typically, multiple adjacent tokens within a single line—such as those defining a method signature, a variable declaration, or a conditional clause—are all assigned to the same semantic category. As a result, transitions captured by bigrams or trigrams tend to reflect intra-category repetition rather than meaningful navigational shifts between higher-level code constructs.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
