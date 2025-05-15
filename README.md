@@ -41,7 +41,6 @@ The directories `Data_Analysis_LMM_Code/`, `Data_Analysis_Complexity_LMM_Code/`,
 
 We propose two different approaches to categorize the code snippets in the EMIP dataset based on their complexity levels. For the first approach, follow the pipeline of `adding_complexity_value.py`, `Computing Metrics Complexity/` and `Data_Analysis_Complexity_LMM_Code/`. For the second approach, follow the pipeline of `adding_complexity_value_new_categorization.py`, `Computing Metrics Complexity New Categorization/` and `Data_Analysis_Complexity_New_Categorization_LMM_Code/`. Please refer to `Measuring the Complexity of the Source Code.txt` for more details about these two categorization methods
 
+## Abstract Scan Path Analysis 
 
-## Preliminary Summary
-
-Please find a preliminary summary in `Temporary Summary of Data Analysis Results.txt`
+The directory `semantic category analysis/` contains all scripts required for conducting abstract scan path analysis. To assign tokens to semantic categories, run `assigning_semantic_category.py`. To generate the full abstract scan path for all trials, run `generating_abstract_scan_path.py` which results in a single .csv file where each row corresponds to one trial and includes relevant metadata including participant , code file, programming language, comprehension question result, source code complexity, expertise level, and the generated scan path. The scan path itself is represented as a sequence of semantic categories connected by arrows. To perform the bigram and trigram analysis, run `bigram_trigram_analysis.py`. To generate plots of bigram and trigram results, run `bigram_plot.py` and `trigram_plot.py` respectively. To train the logistic regression to predict comprehension result based on features of abstract scan path, run `predict_comprehension.py`
